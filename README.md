@@ -5,7 +5,7 @@ Generate binary tree with a logic query string as input
 # How to install?
 
 ```
-npm install -S @yubai/logic-query-parser
+npm install -S @baiyu/logic-query-parser
 ```
 
 Check everything is working with `npm test`.
@@ -25,7 +25,7 @@ Available operators for now : AND, OR, parens, double quote
 # Example
 
 ```js
-var parser = require("@yubai/logic-query-parser");
+var parser = require("@baiyu/logic-query-parser");
 
 var binaryTree = parser.parse("hello AND welcome");
 // or
@@ -61,7 +61,7 @@ The binaryTree for this example will be :
 Another example, slightly more complex:
 
 ```js
-var parser = require("@yubai/logic-query-parser");
+var parser = require("@baiyu/logic-query-parser");
 
 var binaryTree = parser.parse("(welcome OR bye) AND (hello OR ahoy)");
 // or
@@ -123,7 +123,7 @@ And the binary tree :
 As said before, trees are useful but not easy to use. You can also get the "query form":
 
 ```js
-var parser = require("@yubai/logic-query-parser");
+var parser = require("@baiyu/logic-query-parser");
 
 var binaryTree = parser.parse("(welcome OR bye) AND (hello OR ahoy)");
 // or
@@ -172,4 +172,4 @@ Take a look at `config/tests.js` for more samples
 
 Support: `boybai.work@gmail.com`.
 
-Links: [@yubai/logic-query-parser](https://github.com/AnyFetch/@yubai/logic-query-parser)
+Links: [@baiyu/logic-query-parser](https://github.com/AnyFetch/@baiyu/logic-query-parser)
